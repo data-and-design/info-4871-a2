@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Checkout — Foothills Repertory Theatre</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<aside class="course-notice" aria-label="Course exercise notice">
+  <strong>Course exercise.</strong> Foothills Repertory Theatre is not a real organization.
+  Built deliberately inaccessible for <a href="index.html">INFO 4871 Assignment 2</a>.
+  Do not enter real payment details. Nothing here is transmitted anywhere.
+</aside>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site">
+  <div class="wrap">
+    <a class="logo" href="index.html">Foothills Rep</a>
+    <nav class="site">
+      <a href="events.html">What's On</a>
+      <a href="#">Visit</a>
+      <a href="#">Support Us</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap" id="content">
+
+  <h1>Checkout</h1>
+  <p class="meta">The Winter Garden · Fri 18 Sep, 7:30pm · 2 seats · $124.00</p>
+
+  <p class="helper">Your seats are held while you complete this form.</p>
+
+  <form id="pay" novalidate>
+
+    <h2>Contact</h2>
+
+    <div class="field">
+      <label for="name">Name</label>
+      <input type="text" id="name">
+    </div>
+
+    <div class="field">
+      <label for="email">Email</label>
+      <input type="email" id="email">
+      <p class="helper">We send tickets to this address.</p>
+    </div>
+
+    <h2>Payment</h2>
+
+    <div class="field">
+      <input type="text" id="card" placeholder="Card number">
+    </div>
+
+    <div class="field">
+      <label for="expiry">Expiry</label>
+      <input type="text" id="expiry">
+    </div>
+
+    <div class="field">
+      <label for="cvv">CVV</label>
+      <input type="text" id="cvv">
+    </div>
+
+    <div class="field">
+      <label for="zip">Billing postcode</label>
+      <input type="text" id="zip">
+    </div>
+
+    <p><button type="submit" class="btn">Pay $124.00</button></p>
+
+  </form>
+
+</div>
+
+<footer class="site">
+  <div class="wrap">
+    <p class="muted">Foothills Repertory Theatre · 1400 Canyon Road · Box office (555) 0134</p>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

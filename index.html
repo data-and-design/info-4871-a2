@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>INFO 4871 — Assignment 2 practice site</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+  .wrap.intro { width: auto; max-width: 760px; }
+  .intro ol, .intro ul { line-height: 1.7; }
+  .intro code { background: #f0ece7; padding: 1px 5px; }
+</style>
+</head>
+<body>
+
+<aside class="course-notice" aria-label="Course exercise notice">
+  <strong>Course exercise.</strong> Foothills Repertory Theatre is not a real organization.
+  This site was built deliberately inaccessible for INFO 4871 Assignment 2.
+</aside>
+
+<div class="wrap intro">
+  <h1>Assignment 2 practice site</h1>
+
+  <p>This site contains five screens of a ticket purchase flow for a fictional theatre. The markup, styles,
+  and scripts contain a set of accessibility failures. Your job is to find them,
+  map them to WCAG 2.2, rank them, and repair some of them. See the <a href="https://data-and-design.org/classes/4871/assignments/a2/">assignment page</a> for the full details of how to complete this assignment.</p>
+
+  <h2>The flow</h2>
+  <ol>
+    <li><a href="events.html">Events listing</a></li>
+    <li><a href="event.html">Event detail</a></li>
+    <li><a href="seats.html">Seat selection</a></li>
+    <li><a href="checkout.html">Checkout</a></li>
+    <li><a href="confirmation.html">Confirmation</a></li>
+  </ol>
+
+  <h2>Working on a copy</h2>
+  <p>Before you start, clone the <a href="https://github.com/data-and-design/info-4871-a2">assignment repository</a>.
+  You will submit your repairs as a patch file generated from the initial repo state. The
+  <a href="https://data-and-design.org/classes/4871/assignments/a2/">assignment page</a>
+  has instructions on how to do this.
+  </p>
+
+  <p>Every page is plain HTML with no build step, so opening each HTML file in a browser is enough to see your changes.</p>
+
+  <p>Running the automated checkers needs one more step. Serve the folder at a <code>localhost</code>
+  address first, because browsers block extensions such as axe DevTools from reading pages opened
+  straight from disk. The <a href="https://data-and-design.org/classes/4871/assignments/a2/">assignment page</a>
+  gives the commands.</p>
+
+  <h2>Notes</h2>
+  <ul>
+    <li>Audit the five screens listed above. This page is not one of them, and neither is
+    the banner at the top of each page that says "Course exercise".</li>
+    <li>About half of the issues announce themselves in a screen reader's speech output, a handful
+      more turn up when you operate the page from the keyboard or fill in the form, and
+      the rest are only visible in the CSS, the DOM, or an automated checker's report.
+      Expect to read the source as part of this assignment, which is a normal part of auditing.</li>
+    <li>Some problems conform to WCAG but still create usability issues. Those belong in the
+    second list of your analysis, not in the list of findings mapped to WCAG.</li>
+    <li>This assignment does not tell you the total number of accessibility issues. Find as many as you can!</li>
+  </ul>
+
+  <p><a class="btn" href="events.html">Start the flow</a></p>
+</div>
+
+</body>
+</html>
